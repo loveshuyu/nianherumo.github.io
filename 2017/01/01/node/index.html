@@ -31,7 +31,7 @@
 配置环境变量我的电脑 -&amp;gt; 属性 -&amp;gt; 高级系统设置 -&amp;gt; 环境变量  path
 
 什么是nodeNode 是一个服务器端 JavaScript 解释器，它将改变服务器应该如何工作的概念。它的目标是帮助程序员构建高度">
-<meta property="og:updated_time" content="2017-01-01T17:08:02.385Z">
+<meta property="og:updated_time" content="2017-01-01T17:17:01.465Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="node安装和使用">
 <meta name="twitter:description" content="node安装
@@ -69,7 +69,7 @@
 				<h1 class="site-name"><a href="/" title="念涸儒沫">念涸儒沫</a></h1>
 				<h2 class="blog-motto">天下事有难易乎？为之，则难者亦易矣；不为，则易者亦难矣。</h2>
 			</div>
-			<div class="navbar"><a class="navbutton navmobile" href="#" title="Menu">
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜單">
 			</a></div>
 			<nav class="animated">
 				<ul>
@@ -85,7 +85,7 @@
  					
 					<form class="search" action="//google.com/search" method="get" accept-charset="utf-8">
 						<label>Search</label>
-						<input type="search" id="search" name="q" autocomplete="off" maxlength="20" placeholder="Search" />
+						<input type="search" id="search" name="q" autocomplete="off" maxlength="20" placeholder="搜索" />
 						<input type="hidden" name="q" value="site:www.52suxiaomo.com">
 					</form>
 					
@@ -108,16 +108,16 @@
 		<a href="/about" title="王策" target="_blank" itemprop="author">王策</a>
 		
   <p class="article-time">
-    <time datetime="2017-01-01T02:39:37.156Z" itemprop="datePublished"> Published 2017-01-01</time>
+    <time datetime="2017-01-01T02:39:37.156Z" itemprop="datePublished"> 發表於 2017-01-01</time>
     
   </p>
 </header>
 	<div class="article-content">
 		
 		<div id="toc" class="toc-article">
-			<strong class="toc-title">Contents</strong>
+			<strong class="toc-title">文章目錄</strong>
 		
-			<ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#node安装"><span class="toc-number">1.</span> <span class="toc-text">node安装</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#配置环境变量"><span class="toc-number"></span> <span class="toc-text">配置环境变量</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#什么是node"><span class="toc-number"></span> <span class="toc-text">什么是node</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#seajs-requirejs"><span class="toc-number"></span> <span class="toc-text">seajs requirejs</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#seajs"><span class="toc-number">1.</span> <span class="toc-text">seajs</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#导入seajs"><span class="toc-number">1.1.</span> <span class="toc-text">导入seajs</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#配置"><span class="toc-number">1.2.</span> <span class="toc-text">配置</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#入口"><span class="toc-number">1.3.</span> <span class="toc-text">入口</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#seajs-use-还有另外一种用法。"><span class="toc-number">1.4.</span> <span class="toc-text">seajs.use()还有另外一种用法。</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#requirejs"><span class="toc-number">2.</span> <span class="toc-text">requirejs</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#在HTML中引入requirejs"><span class="toc-number">2.1.</span> <span class="toc-text">在HTML中引入requirejs</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#在config-js中配置requirejs"><span class="toc-number">2.2.</span> <span class="toc-text">在config.js中配置requirejs</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#node是单线程，没有多线程"><span class="toc-number"></span> <span class="toc-text">node是单线程，没有多线程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#进程包含线程，node中一个进程只有一个线程，想开多个线程，node开子进程"><span class="toc-number"></span> <span class="toc-text">进程包含线程，node中一个进程只有一个线程，想开多个线程，node开子进程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#什么是回调"><span class="toc-number"></span> <span class="toc-text">什么是回调</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#阻塞-非阻塞"><span class="toc-number"></span> <span class="toc-text">阻塞  非阻塞</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#同步与异步"><span class="toc-number"></span> <span class="toc-text">同步与异步</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#global"><span class="toc-number"></span> <span class="toc-text">global</span></a>
+			<ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#node安装"><span class="toc-number">1.</span> <span class="toc-text">node安装</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#配置环境变量"><span class="toc-number"></span> <span class="toc-text">配置环境变量</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#什么是node"><span class="toc-number"></span> <span class="toc-text">什么是node</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#seajs-requirejs"><span class="toc-number"></span> <span class="toc-text">seajs requirejs</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#seajs"><span class="toc-number">1.</span> <span class="toc-text">seajs</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#导入seajs"><span class="toc-number">1.1.</span> <span class="toc-text">导入seajs</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#配置"><span class="toc-number">1.2.</span> <span class="toc-text">配置</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#入口"><span class="toc-number">1.3.</span> <span class="toc-text">入口</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#seajs-use-还有另外一种用法。"><span class="toc-number">1.4.</span> <span class="toc-text">seajs.use()还有另外一种用法。</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#requirejs"><span class="toc-number">2.</span> <span class="toc-text">requirejs</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#在HTML中引入requirejs"><span class="toc-number">2.1.</span> <span class="toc-text">在HTML中引入requirejs</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#在config-js中配置requirejs"><span class="toc-number">2.2.</span> <span class="toc-text">在config.js中配置requirejs</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#node是单线程，没有多线程"><span class="toc-number">3.</span> <span class="toc-text">node是单线程，没有多线程</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#进程包含线程，node中一个进程只有一个线程，想开多个线程，node开子进程"><span class="toc-number">4.</span> <span class="toc-text">进程包含线程，node中一个进程只有一个线程，想开多个线程，node开子进程</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#什么是回调"><span class="toc-number">5.</span> <span class="toc-text">什么是回调</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#阻塞-非阻塞"><span class="toc-number">6.</span> <span class="toc-text">阻塞  非阻塞</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#同步与异步"><span class="toc-number">7.</span> <span class="toc-text">同步与异步</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#global"><span class="toc-number"></span> <span class="toc-text">global</span></a>
 		
 		</div>
 		
@@ -131,7 +131,9 @@
 <h2 id="什么是node"><a href="#什么是node" class="headerlink" title="什么是node"></a>什么是node</h2><p>Node 是一个服务器端 JavaScript 解释器，它将改变服务器应该如何工作的概念。它的目标是帮助程序员构建高度可伸缩的应用程序，编写能够处理数万条同时连接到一个（只有一个）物理机的连接代码。</p>
 <h2 id="seajs-requirejs"><a href="#seajs-requirejs" class="headerlink" title="seajs requirejs"></a>seajs requirejs</h2><ul>
 <li>SeaJS对模块的态度是懒执行, 而RequireJS对模块的态度是预执行</li>
-<li>RequireJS 是执行的 AMD 规范, 因此所有的依赖模块都是先执行.<h3 id="seajs"><a href="#seajs" class="headerlink" title="seajs"></a>seajs</h3></li>
+<li>RequireJS 是执行的 AMD 规范, 因此所有的依赖模块都是先执行.</li>
+</ul>
+<h3 id="seajs"><a href="#seajs" class="headerlink" title="seajs"></a>seajs</h3><ul>
 <li>1.Seajs是一个加载器 <a href="http://kb.cnblogs.com/page/211942/" target="_blank" rel="external">http://kb.cnblogs.com/page/211942/</a></li>
 <li>2.遵循 CMD 规范模块化开发，依赖的自动加载、配置的简洁清晰。</li>
 <li>3.兼容性<ul>
@@ -139,11 +141,11 @@
 <li>Firefox 2+</li>
 <li>Safari 3.2+</li>
 <li>Opera 10+</li>
-<li>IE 5.5+<h4 id="导入seajs"><a href="#导入seajs" class="headerlink" title="导入seajs"></a>导入seajs</h4>在页尾引入seajs： <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;script src=&quot;/site/script/sea.js&quot;&gt;&lt;/script&gt;</div></pre></td></tr></table></figure>
-</li>
+<li>IE 5.5+</li>
 </ul>
 </li>
 </ul>
+<h4 id="导入seajs"><a href="#导入seajs" class="headerlink" title="导入seajs"></a>导入seajs</h4><p>在页尾引入seajs：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;script src=&quot;/site/script/sea.js&quot;&gt;&lt;/script&gt;</div></pre></td></tr></table></figure></p>
 <p>然后在它下面写模块的配置和入口。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">// seajs 的简单配置</div><div class="line">seajs.config(&#123;</div><div class="line">base: &quot;../sea-modules/&quot;,</div><div class="line">alias: &#123;</div><div class="line">  &quot;jquery&quot;: &quot;jquery/jquery/1.10.1/jquery.js&quot;</div><div class="line">&#125;</div><div class="line">&#125;);</div><div class="line"></div><div class="line">// 加载入口模块</div><div class="line">seajs.use(&quot;../static/hello/src/main&quot;);</div></pre></td></tr></table></figure></p>
 <h4 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">通常在配置上修改seajs的路径和别名。</div><div class="line">seajs.config(&#123;</div><div class="line">	// Sea.js 的基础路径（修改这个就不是路径就不是相对于seajs文件了）</div><div class="line">	base: &apos;http://example.com/path/to/base/&apos;,</div><div class="line">	// 别名配置（用变量表示文件，解决路径层级过深和实现路径映射）</div><div class="line">	alias: &#123;</div><div class="line">		&apos;es5-safe&apos;: &apos;gallery/es5-safe/0.9.3/es5-safe&apos;,</div><div class="line">		&apos;json&apos;: &apos;gallery/json/1.0.2/json&apos;,</div><div class="line">		&apos;jquery&apos;: &apos;jquery/jquery/1.10.1/jquery&apos;</div><div class="line">	&#125;,</div><div class="line">	// 路径配置（用变量表示路径，解决路径层级过深的问题）</div><div class="line">	paths: &#123;</div><div class="line">		&apos;gallery&apos;: &apos;https://a.alipayobjects.com/gallery&apos;</div><div class="line">	&#125;</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
 <h4 id="入口"><a href="#入口" class="headerlink" title="入口"></a>入口</h4><p>入口即加载，需要加载什么文件（模块加载器）就在这里引入。 sea.js 在下载完成后，会自动加载入口模块。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">seajs.use(&quot;abc/main&quot;);  //导入seajs.js同级的abc文件夹下的main.js模块的（后缀名可略去不写）</div></pre></td></tr></table></figure></p>
@@ -153,9 +155,9 @@
 <h3 id="requirejs"><a href="#requirejs" class="headerlink" title="requirejs"></a>requirejs</h3><ul>
 <li>1.声明不同js文件之间的依赖</li>
 <li>2.可以按需、并行、延时载入js库</li>
-<li>3.可以让我们的代码以模块化的方式组织<h4 id="在HTML中引入requirejs"><a href="#在HTML中引入requirejs" class="headerlink" title="在HTML中引入requirejs"></a>在HTML中引入requirejs</h4>在HTML中，添加这样的 \<script\> 标签：<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;script src=&quot;/path/to/require.js&quot; data-main=&quot;/path/to/app/config.js&quot;&gt;&lt;/script&gt;</div></pre></td></tr></table></figure>
-</script\></li>
+<li>3.可以让我们的代码以模块化的方式组织</li>
 </ul>
+<h4 id="在HTML中引入requirejs"><a href="#在HTML中引入requirejs" class="headerlink" title="在HTML中引入requirejs"></a>在HTML中引入requirejs</h4><p>在HTML中，添加这样的 \<script\> 标签：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;script src=&quot;/path/to/require.js&quot; data-main=&quot;/path/to/app/config.js&quot;&gt;&lt;/script&gt;</div></pre></td></tr></table></figure></script\></p>
 <blockquote>
 <p>通常使用requirejs的话，我们只需要导入requirejs即可，不需要显式导入其它的js库，因为这个工作会交给requirejs来做</p>
 </blockquote>
@@ -172,10 +174,10 @@
 <li>另外还可以把 require 当作依赖的模块，然后调用它的方法：<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">define([&quot;require&quot;], function(require) &#123;</div><div class="line">    var cssUrl = require.toUrl(&quot;./style.css&quot;);</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
 </li>
 </ul>
-<h2 id="node是单线程，没有多线程"><a href="#node是单线程，没有多线程" class="headerlink" title="node是单线程，没有多线程"></a>node是单线程，没有多线程</h2><h2 id="进程包含线程，node中一个进程只有一个线程，想开多个线程，node开子进程"><a href="#进程包含线程，node中一个进程只有一个线程，想开多个线程，node开子进程" class="headerlink" title="进程包含线程，node中一个进程只有一个线程，想开多个线程，node开子进程"></a>进程包含线程，node中一个进程只有一个线程，想开多个线程，node开子进程</h2><h2 id="什么是回调"><a href="#什么是回调" class="headerlink" title="什么是回调"></a>什么是回调</h2><p>当一件事执行后再执行一件事，就是将后续逻辑当做参数传入当前逻辑中</p>
-<h2 id="阻塞-非阻塞"><a href="#阻塞-非阻塞" class="headerlink" title="阻塞  非阻塞"></a>阻塞  非阻塞</h2><p>针对内核来说的，阻塞和非阻塞关注的是程序在等待调用结果（消息，返回值）时的状态.</p>
+<h3 id="node是单线程，没有多线程"><a href="#node是单线程，没有多线程" class="headerlink" title="node是单线程，没有多线程"></a>node是单线程，没有多线程</h3><h3 id="进程包含线程，node中一个进程只有一个线程，想开多个线程，node开子进程"><a href="#进程包含线程，node中一个进程只有一个线程，想开多个线程，node开子进程" class="headerlink" title="进程包含线程，node中一个进程只有一个线程，想开多个线程，node开子进程"></a>进程包含线程，node中一个进程只有一个线程，想开多个线程，node开子进程</h3><h3 id="什么是回调"><a href="#什么是回调" class="headerlink" title="什么是回调"></a>什么是回调</h3><p>当一件事执行后再执行一件事，就是将后续逻辑当做参数传入当前逻辑中</p>
+<h3 id="阻塞-非阻塞"><a href="#阻塞-非阻塞" class="headerlink" title="阻塞  非阻塞"></a>阻塞  非阻塞</h3><p>针对内核来说的，阻塞和非阻塞关注的是程序在等待调用结果（消息，返回值）时的状态.</p>
 <p>阻塞调用是指调用结果返回之前，当前线程会被挂起。调用线程只有在得到结果之后才会返回。<br>非阻塞调用指在不能立刻得到结果之前，该调用不会阻塞当前线程。</p>
-<h2 id="同步与异步"><a href="#同步与异步" class="headerlink" title="同步与异步"></a>同步与异步</h2><ul>
+<h3 id="同步与异步"><a href="#同步与异步" class="headerlink" title="同步与异步"></a>同步与异步</h3><ul>
 <li><p>同步和异步关注的是消息通信机制 (synchronous communication/ asynchronous communication)<br>所谓同步，就是在发出一个<em>调用</em>时，在没有得到结果之前，该<em>调用</em>就不返回。但是一旦调用返回，就得到返回值了。<br>换句话说，就是由<em>调用者</em>主动等待这个<em>调用</em>的结果。</p>
 </li>
 <li><p>而异步则是相反，<em>调用</em>在发出之后，这个调用就直接返回了，所以没有返回结果。换句话说，当一个异步过程调用发出后，调用者不会立刻得到结果。而是在<em>调用</em>发出后，<em>被调用者</em>通过状态、通知来通知调用者，或通过回调函数处理这个调用。</p>
@@ -229,14 +231,6 @@
 	
 <nav class="article-nav clearfix">
  
- <div class="prev" >
- <a href="/2017/01/01/1/" title="">
-  <strong>上一篇：</strong><br/>
-  <span>
-  (no title)</span>
-</a>
-</div>
-
 
 <div class="next">
 <a href="/2016/12/31/git/"  title="Git的使用">
@@ -251,17 +245,17 @@
 	
 
 </div>  
-      <div class="openaside"><a class="navbutton" href="#" title="Show Sidebar"></a></div>
+      <div class="openaside"><a class="navbutton" href="#" title="顯示側邊欄"></a></div>
 
   <div id="toc" class="toc-aside">
-  <strong class="toc-title">Contents</strong>
+  <strong class="toc-title">文章目錄</strong>
  
- <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#node安装"><span class="toc-number">1.</span> <span class="toc-text">node安装</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#配置环境变量"><span class="toc-number"></span> <span class="toc-text">配置环境变量</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#什么是node"><span class="toc-number"></span> <span class="toc-text">什么是node</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#seajs-requirejs"><span class="toc-number"></span> <span class="toc-text">seajs requirejs</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#seajs"><span class="toc-number">1.</span> <span class="toc-text">seajs</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#导入seajs"><span class="toc-number">1.1.</span> <span class="toc-text">导入seajs</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#配置"><span class="toc-number">1.2.</span> <span class="toc-text">配置</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#入口"><span class="toc-number">1.3.</span> <span class="toc-text">入口</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#seajs-use-还有另外一种用法。"><span class="toc-number">1.4.</span> <span class="toc-text">seajs.use()还有另外一种用法。</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#requirejs"><span class="toc-number">2.</span> <span class="toc-text">requirejs</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#在HTML中引入requirejs"><span class="toc-number">2.1.</span> <span class="toc-text">在HTML中引入requirejs</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#在config-js中配置requirejs"><span class="toc-number">2.2.</span> <span class="toc-text">在config.js中配置requirejs</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#node是单线程，没有多线程"><span class="toc-number"></span> <span class="toc-text">node是单线程，没有多线程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#进程包含线程，node中一个进程只有一个线程，想开多个线程，node开子进程"><span class="toc-number"></span> <span class="toc-text">进程包含线程，node中一个进程只有一个线程，想开多个线程，node开子进程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#什么是回调"><span class="toc-number"></span> <span class="toc-text">什么是回调</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#阻塞-非阻塞"><span class="toc-number"></span> <span class="toc-text">阻塞  非阻塞</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#同步与异步"><span class="toc-number"></span> <span class="toc-text">同步与异步</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#global"><span class="toc-number"></span> <span class="toc-text">global</span></a>
+ <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#node安装"><span class="toc-number">1.</span> <span class="toc-text">node安装</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#配置环境变量"><span class="toc-number"></span> <span class="toc-text">配置环境变量</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#什么是node"><span class="toc-number"></span> <span class="toc-text">什么是node</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#seajs-requirejs"><span class="toc-number"></span> <span class="toc-text">seajs requirejs</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#seajs"><span class="toc-number">1.</span> <span class="toc-text">seajs</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#导入seajs"><span class="toc-number">1.1.</span> <span class="toc-text">导入seajs</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#配置"><span class="toc-number">1.2.</span> <span class="toc-text">配置</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#入口"><span class="toc-number">1.3.</span> <span class="toc-text">入口</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#seajs-use-还有另外一种用法。"><span class="toc-number">1.4.</span> <span class="toc-text">seajs.use()还有另外一种用法。</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#requirejs"><span class="toc-number">2.</span> <span class="toc-text">requirejs</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#在HTML中引入requirejs"><span class="toc-number">2.1.</span> <span class="toc-text">在HTML中引入requirejs</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#在config-js中配置requirejs"><span class="toc-number">2.2.</span> <span class="toc-text">在config.js中配置requirejs</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#node是单线程，没有多线程"><span class="toc-number">3.</span> <span class="toc-text">node是单线程，没有多线程</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#进程包含线程，node中一个进程只有一个线程，想开多个线程，node开子进程"><span class="toc-number">4.</span> <span class="toc-text">进程包含线程，node中一个进程只有一个线程，想开多个线程，node开子进程</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#什么是回调"><span class="toc-number">5.</span> <span class="toc-text">什么是回调</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#阻塞-非阻塞"><span class="toc-number">6.</span> <span class="toc-text">阻塞  非阻塞</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#同步与异步"><span class="toc-number">7.</span> <span class="toc-text">同步与异步</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#global"><span class="toc-number"></span> <span class="toc-text">global</span></a>
  
   </div>
 
 <div id="asidepart">
-<div class="closeaside"><a class="closebutton" href="#" title="Hide Sidebar"></a></div>
+<div class="closeaside"><a class="closebutton" href="#" title="隱藏側邊欄"></a></div>
 <aside class="clearfix">
 
   
@@ -272,7 +266,7 @@
   
 
   <div class="linkslist">
-  <p class="asidetitle">Links</p>
+  <p class="asidetitle">友情鏈接</p>
     <ul>
         
           <li>
@@ -294,11 +288,11 @@
 
 
   <div class="rsspart">
-	<a href="/atom.xml" target="_blank" title="rss">RSS</a>
+	<a href="/atom.xml" target="_blank" title="rss">RSS 訂閱</a>
 </div>
 
   <div class="weiboshow">
-  <p class="asidetitle">Weibo</p>
+  <p class="asidetitle">新浪微博</p>
     <iframe width="100%" height="119" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=119&fansRow=2&ptype=1&speed=0&skin=9&isTitle=1&noborder=1&isWeibo=0&isFans=0&uid=null&verifier=b3593ceb&dpc=1"></iframe>
 </div>
 
@@ -525,7 +519,7 @@ var _hmt = _hmt || [];
 <!-- Totop Begin -->
 
 	<div id="totop">
-	<a title="Back to Top"><img src="/img/scrollup.png"/></a>
+	<a title="返回頂部"><img src="/img/scrollup.png"/></a>
 	</div>
 	<script src="/js/totop.js"></script>
 
