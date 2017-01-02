@@ -1,6 +1,6 @@
 
  <!DOCTYPE HTML>
-<html lang="简体中文">
+<html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
   
@@ -23,7 +23,7 @@ AngularJS 是一个 JavaScript 框架。它可通过 \ 标签添加到 HTML 页�
 AngularJS 是一个 JavaScript 框架。它可通过 \ 标签添加到 HTML 页面。
 学习曲线 - 入门容易 - 深入较难
 框架 - 框架是一种特殊的、已经实现了的WEB应用，你只需要对它填充具体的业务逻辑。这里框架是起主导作用的，由它来根据具体的应用逻辑来调用你的代码。框架有：knockout、sproutcore等。 我们按照人家的规则写好了代码，被动性质的">
-<meta property="og:updated_time" content="2016-12-30T08:14:00.760Z">
+<meta property="og:updated_time" content="2017-01-02T08:44:14.908Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="angular的使用">
 <meta name="twitter:description" content="什么是angular
@@ -57,7 +57,7 @@ AngularJS 是一个 JavaScript 框架。它可通过 \ 标签添加到 HTML 页�
 				<h1 class="site-name"><a href="/" title="念涸儒沫">念涸儒沫</a></h1>
 				<h2 class="blog-motto">天下事有难易乎？为之，则难者亦易矣；不为，则易者亦难矣。</h2>
 			</div>
-			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜單">
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜单">
 			</a></div>
 			<nav class="animated">
 				<ul>
@@ -68,6 +68,10 @@ AngularJS 是一个 JavaScript 框架。它可通过 \ 标签添加到 HTML 页�
 						<li><a href="/archives">Archives</a></li>
 					
 						<li><a href="/about">About</a></li>
+					
+						<li><a href="/categories   // 如果有问题在前面加一个反斜杠">categories</a></li>
+					
+						<li><a href="/tags">tags</a></li>
 					
 					<li>
  					
@@ -96,14 +100,14 @@ AngularJS 是一个 JavaScript 框架。它可通过 \ 标签添加到 HTML 页�
 		<a href="/about" title="王策" target="_blank" itemprop="author">王策</a>
 		
   <p class="article-time">
-    <time datetime="2016-12-31T06:56:24.636Z" itemprop="datePublished"> 發表於 2016-12-31</time>
+    <time datetime="2016-12-31T06:56:24.636Z" itemprop="datePublished"> 发表于 2016-12-31</time>
     
   </p>
 </header>
 	<div class="article-content">
 		
 		<div id="toc" class="toc-article">
-			<strong class="toc-title">文章目錄</strong>
+			<strong class="toc-title">文章目录</strong>
 		
 			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#什么是angular"><span class="toc-number">1.</span> <span class="toc-text">什么是angular</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#使用angular"><span class="toc-number">2.</span> <span class="toc-text">使用angular</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#安装angular"><span class="toc-number">2.1.</span> <span class="toc-text">安装angular</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#运用angular"><span class="toc-number">2.2.</span> <span class="toc-text">运用angular</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#防止闪烁"><span class="toc-number">2.3.</span> <span class="toc-text">防止闪烁</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#控制器和模块"><span class="toc-number">2.4.</span> <span class="toc-text">控制器和模块</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#控制器的特点"><span class="toc-number">2.5.</span> <span class="toc-text">控制器的特点</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#配置全局属性"><span class="toc-number">2.6.</span> <span class="toc-text">配置全局属性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#ng-repeat"><span class="toc-number">2.7.</span> <span class="toc-text">ng-repeat</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#ng-click"><span class="toc-number">2.8.</span> <span class="toc-text">ng-click</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#过滤器"><span class="toc-number">3.</span> <span class="toc-text">过滤器</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-filter使用语法"><span class="toc-number">3.1.</span> <span class="toc-text">1.filter使用语法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-在controller和service中使用filter"><span class="toc-number">3.2.</span> <span class="toc-text">2.在controller和service中使用filter</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#ng内置过滤器"><span class="toc-number">3.3.</span> <span class="toc-text">ng内置过滤器</span></a></li></ol></li></ol>
 		
@@ -257,7 +261,7 @@ AngularJS 是一个 JavaScript 框架。它可通过 \ 标签添加到 HTML 页�
   <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&lt;div&gt;&#123;&#123; childrenArray | orderBy : &apos;age&apos; &#125;&#125;&lt;/div&gt;      //按age属性值进行排序</div><div class="line">&lt;div&gt;&#123;&#123; childrenArray | orderBy : orderFunc &#125;&#125;&lt;/div&gt;   //按照函数的返回值进行排序</div><div class="line">&lt;div&gt;&#123;&#123; childrenArray | orderBy : [&apos;age&apos;,&apos;name&apos;] &#125;&#125;&lt;/div&gt;  //如果age相同，按照name进行排序</div></pre></td></tr></table></figure>
 </li>
 </ul>
-  
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="10" height="10" src="//music.163.com/outchain/player?type=2&id=27646786&auto=1&height=66"></iframe>  
 	</div>
 		<footer class="article-footer clearfix">
 <div class="article-catetags">
@@ -269,7 +273,7 @@ AngularJS 是一个 JavaScript 框架。它可通过 \ 标签添加到 HTML 页�
 
 	<div class="article-share" id="share">
 	
-	  <div data-url="http://www.52suxiaomo.com/2016/12/31/angular/" data-title="angular的使用 | 念涸儒沫" data-tsina="null" class="share clearfix">
+	  <div data-url="http://www.52suxiaomo.com/2016/12/31/angular/" data-title="angular的使用 | 念涸儒沫" data-tsina="5865853234" class="share clearfix">
 	  </div>
 	
 	</div>
@@ -294,22 +298,33 @@ AngularJS 是一个 JavaScript 框架。它可通过 \ 标签添加到 HTML 页�
 </nav>
 
 	
+<section id="comments" class="comment">
+	<div class="ds-thread" data-thread-key="2016/12/31/angular/" data-title="angular的使用" data-url="http://www.52suxiaomo.com/2016/12/31/angular/"></div>
+</section>
+
 
 </div>  
-      <div class="openaside"><a class="navbutton" href="#" title="顯示側邊欄"></a></div>
+      <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏"></a></div>
 
   <div id="toc" class="toc-aside">
-  <strong class="toc-title">文章目錄</strong>
+  <strong class="toc-title">文章目录</strong>
  
  <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#什么是angular"><span class="toc-number">1.</span> <span class="toc-text">什么是angular</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#使用angular"><span class="toc-number">2.</span> <span class="toc-text">使用angular</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#安装angular"><span class="toc-number">2.1.</span> <span class="toc-text">安装angular</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#运用angular"><span class="toc-number">2.2.</span> <span class="toc-text">运用angular</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#防止闪烁"><span class="toc-number">2.3.</span> <span class="toc-text">防止闪烁</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#控制器和模块"><span class="toc-number">2.4.</span> <span class="toc-text">控制器和模块</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#控制器的特点"><span class="toc-number">2.5.</span> <span class="toc-text">控制器的特点</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#配置全局属性"><span class="toc-number">2.6.</span> <span class="toc-text">配置全局属性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#ng-repeat"><span class="toc-number">2.7.</span> <span class="toc-text">ng-repeat</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#ng-click"><span class="toc-number">2.8.</span> <span class="toc-text">ng-click</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#过滤器"><span class="toc-number">3.</span> <span class="toc-text">过滤器</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-filter使用语法"><span class="toc-number">3.1.</span> <span class="toc-text">1.filter使用语法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-在controller和service中使用filter"><span class="toc-number">3.2.</span> <span class="toc-text">2.在controller和service中使用filter</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#ng内置过滤器"><span class="toc-number">3.3.</span> <span class="toc-text">ng内置过滤器</span></a></li></ol></li></ol>
  
   </div>
 
 <div id="asidepart">
-<div class="closeaside"><a class="closebutton" href="#" title="隱藏側邊欄"></a></div>
+<div class="closeaside"><a class="closebutton" href="#" title="隐藏侧边栏"></a></div>
 <aside class="clearfix">
 
   
+<div class="github-card">
+<p class="asidetitle">Github 名片</p>
+<div class="github-card" data-github="nianherumo" data-width="220" data-height="119" data-theme="medium">
+<script type="text/javascript" src="//cdn.jsdelivr.net/github-cards/latest/widget.js" ></script>
+</div>
+  </div>
+
 
 
   
@@ -317,7 +332,7 @@ AngularJS 是一个 JavaScript 框架。它可通过 \ 标签添加到 HTML 页�
   
 
   <div class="linkslist">
-  <p class="asidetitle">友情鏈接</p>
+  <p class="asidetitle">友情链接</p>
     <ul>
         
           <li>
@@ -339,12 +354,12 @@ AngularJS 是一个 JavaScript 框架。它可通过 \ 标签添加到 HTML 页�
 
 
   <div class="rsspart">
-	<a href="/atom.xml" target="_blank" title="rss">RSS 訂閱</a>
+	<a href="/atom.xml" target="_blank" title="rss">RSS 订阅</a>
 </div>
 
   <div class="weiboshow">
   <p class="asidetitle">新浪微博</p>
-    <iframe width="100%" height="119" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=119&fansRow=2&ptype=1&speed=0&skin=9&isTitle=1&noborder=1&isWeibo=0&isFans=0&uid=null&verifier=b3593ceb&dpc=1"></iframe>
+    <iframe width="100%" height="119" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=119&fansRow=2&ptype=1&speed=0&skin=9&isTitle=1&noborder=1&isWeibo=0&isFans=0&uid=5865853234&verifier=b3593ceb&dpc=1"></iframe>
 </div>
 
 
@@ -366,7 +381,10 @@ AngularJS 是一个 JavaScript 框架。它可通过 \ 标签添加到 HTML 页�
 	 
 	<div class="social-font" class="clearfix">
 		
-		<a href="http://weibo.com/2176287895" target="_blank" class="icon-weibo" title="微博"></a>
+		<a href="http://weibo.com/5865853234" target="_blank" class="icon-weibo" title="微博"></a>
+		
+		
+		<a href="https://github.com/nianherumo" target="_blank" class="icon-github" title="github"></a>
 		
 		
 		
@@ -376,6 +394,7 @@ AngularJS 是一个 JavaScript 框架。它可通过 \ 标签添加到 HTML 页�
 		
 		
 		
+		<a href="mailto:1607155881@qq.com" target="_blank" class="icon-email" title="Email Me"></a>
 		
 	</div>
 			
@@ -520,6 +539,18 @@ $(document).ready(function(){
 
 
 
+<script type="text/javascript">
+  var duoshuoQuery = {short_name:"nianherumo"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] 
+    || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+</script> 
+
 
 
 
@@ -570,7 +601,7 @@ var _hmt = _hmt || [];
 <!-- Totop Begin -->
 
 	<div id="totop">
-	<a title="返回頂部"><img src="/img/scrollup.png"/></a>
+	<a title="返回顶部"><img src="/img/scrollup.png"/></a>
 	</div>
 	<script src="/js/totop.js"></script>
 
