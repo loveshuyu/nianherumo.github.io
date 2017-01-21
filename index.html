@@ -65,11 +65,10 @@
 					
 					<li>
  					
-					<form class="search" action="//google.com/search" method="get" accept-charset="utf-8">
-						<label>Search</label>
-						<input type="search" id="search" name="q" autocomplete="off" maxlength="20" placeholder="搜索" />
-						<input type="hidden" name="q" value="site:www.52suxiaomo.com">
-					</form>
+						<form class="search" action="http://baidu.com" target="_blank">
+							<label>Search</label>
+						<input name="s" type="hidden" value= null ><input type="text" name="q" size="30" placeholder="搜索"><br>
+						</form>
 					
 					</li>
 				</ul>
@@ -543,10 +542,9 @@
   <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&#123;&#123; jsonTest | json&#125;&#125;</div></pre></td></tr></table></figure>
 </li>
 <li><p>9.orderBy(排序)<br>orderBy过滤器可以将一个数组中的元素进行排序，接收一个参数来指定排序规则，参数可以是一个字符串，表示以该属性名称进行排序。可以是一个函数，定义排序属性。还可以是一个数组，表示依次按数组中的属性值进行排序（若按第一项比较的值相等，再按第二项比较），还是拿上面的孩子数组举例：</p>
-  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&lt;div&gt;&#123;&#123; childrenArray | orderBy : &apos;age&apos; &#125;&#125;&lt;/div&gt;      //按age属性值进行排序</div><div class="line">&lt;div&gt;&#123;&#123; childrenArray | orderBy : orderFunc &#125;&#125;&lt;/div&gt;   //按照函数的返回值进行排序</div><div class="line">&lt;div&gt;&#123;&#123; childrenArray | orderBy : [&apos;age&apos;,&apos;name&apos;] &#125;&#125;&lt;/div&gt;  //如果age相同，按照name进行排序</div></pre></td></tr></table></figure>
-</li>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&lt;div&gt;&#123;&#123; childrenArray | orderBy : &apos;age&apos; &#125;&#125;&lt;/div&gt;      //按age属性值进行排序</div><div class="line">&lt;div&gt;&#123;&#123; childrenArray | orderBy : orderFunc &#125;&#125;&lt;/div&gt;   //按照函数的返回值进行排序</div><div class="line">&lt;div&gt;&#123;&#123; childrenArray | orderBy : [&apos;age&apos;,&apos;name&apos;] &#125;&#125;&lt;/div&gt;  //如果age相同，按照name进行排序</div></pre></td></tr></table></figure></li>
 </ul>
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="0" height="0" src="//music.163.com/outchain/player?type=2&id=27646786&auto=1&height=0"></iframe>
+
         
 
         <p class="article-more-link">
@@ -627,6 +625,12 @@
             
           </li>
         
+          <li>
+            
+            	<a href="http://www.w3school.com.cn/" target="_blank" title="w3school">w3school</a>
+            
+          </li>
+        
     </ul>
 </div>
 
@@ -671,6 +675,8 @@
 		
 		
 		
+		
+		<a href="http://www.zhihu.com/people/nianherumo" target="_blank" class="icon-zhihu" title="知乎"></a>
 		
 		
 		
@@ -791,7 +797,7 @@ $(document).ready(function(){
 var _hmt = _hmt || [];
 (function() {
   var hm = document.createElement("script");
-  hm.src = "//hm.baidu.com/hm.js?e6d1f421bbc9962127a50488f9ed37d1";
+  hm.src = "//hm.baidu.com/hm.js?null";
   var s = document.getElementsByTagName("script")[0]; 
   s.parentNode.insertBefore(hm, s);
 })();
